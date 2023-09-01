@@ -1,0 +1,1 @@
+# Tarot-Major-Arcana-Only
