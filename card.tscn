@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6fg733a4y4p"]
+
+[ext_resource type="Texture2D" uid="uid://gqu7lfyk355i" path="res://assets/ZZ_Card_Back.jpg" id="1_fhxuc"]
+[ext_resource type="Script" path="res://CardBlack.gd" id="2_dhi2p"]
+
+[node name="CardBlack" type="TextureRect"]
+offset_left = 471.0
+offset_top = 354.0
+offset_right = 655.0
+offset_bottom = 666.0
+texture = ExtResource("1_fhxuc")
+script = ExtResource("2_dhi2p")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+offset_right = 182.0
+offset_bottom = 310.0

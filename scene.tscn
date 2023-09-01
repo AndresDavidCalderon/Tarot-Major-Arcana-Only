@@ -1,24 +1,30 @@
 [gd_scene load_steps=5 format=3 uid="uid://d03lxgdgy5lo4"]
 
-[ext_resource type="Texture2D" uid="uid://gqu7lfyk355i" path="res://assets/ZZ_Card_Back.jpg" id="1_88bd5"]
+[ext_resource type="PackedScene" uid="uid://c6fg733a4y4p" path="res://card.tscn" id="1_o7sfj"]
 [ext_resource type="Texture2D" uid="uid://djf60ewyoro5p" path="res://assets/14_Temperance.jpg" id="2_p5kfo"]
 [ext_resource type="Texture2D" uid="uid://bnjasuts22orv" path="res://assets/15_The_Devil.jpg" id="3_he0fj"]
 [ext_resource type="Texture2D" uid="uid://blco5ew1a88n8" path="res://assets/16_The_Tower.jpg" id="4_o2p7g"]
 
 [node name="scene" type="Node2D"]
 
-[node name="ZzCardBack" type="Sprite2D" parent="."]
-position = Vector2(144, 881)
-texture = ExtResource("1_88bd5")
+[node name="CardBlack" parent="." instance=ExtResource("1_o7sfj")]
 
-[node name="14Temperance" type="Sprite2D" parent="."]
-position = Vector2(478, 514)
+[node name="Temperance" parent="." instance=ExtResource("1_o7sfj")]
+offset_left = 752.0
+offset_right = 952.0
+offset_bottom = 682.0
 texture = ExtResource("2_p5kfo")
 
-[node name="15TheDevil" type="Sprite2D" parent="."]
-position = Vector2(718, 515)
+[node name="TheDevil" parent="." instance=ExtResource("1_o7sfj")]
+offset_left = 1058.0
+offset_top = 360.0
+offset_right = 1258.0
+offset_bottom = 688.0
 texture = ExtResource("3_he0fj")
 
-[node name="16TheTower" type="Sprite2D" parent="."]
-position = Vector2(956, 514)
+[node name="TheTower" parent="." instance=ExtResource("1_o7sfj")]
+offset_left = 1349.0
+offset_top = 362.0
+offset_right = 1549.0
+offset_bottom = 690.0
 texture = ExtResource("4_o2p7g")
